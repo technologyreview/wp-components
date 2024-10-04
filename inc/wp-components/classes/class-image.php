@@ -722,12 +722,12 @@ class Image extends Component {
 	 *
 	 * @see  https://developer.wordpress.com/docs/photon/api/#resize
 	 *
-	 * @param int $width  Resized width.
-	 * @param int $height Resized height.
+	 * @param float $width  Resized width.
+	 * @param float $height Resized height.
 	 * @param int $density_multiplier screen density multiplier.
 	 * @return array Transform values prepared to be added as query args.
 	 */
-	public function resize( int $width, int $height, $density_multiplier = 1 ) {
+	public function resize( float $width, float $height, $density_multiplier = 1 ) {
 		$value = sprintf(
 			'%1$d,%2$d',
 			absint( $width ) * $density_multiplier,
