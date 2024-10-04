@@ -715,16 +715,16 @@ class Image extends Component {
 	}
 
 	/**
-	 * Resize and crop an image to exact width, height pixel dimensions. Set the
+	 * Resize and crop an image to exact width,height pixel dimensions. Set the
 	 * first number as close to the target size as possible and then crop the
-	 * rest. Which direction it's resized and cropped depends on the aspect
+	 * rest. Which direction it’s resized and cropped depends on the aspect
 	 * ratios of the original image and the target size.
 	 *
 	 * @see  https://developer.wordpress.com/docs/photon/api/#resize
 	 *
 	 * @param float $width  Resized width.
 	 * @param float $height Resized height.
-	 * @param int   $density_multiplier screen density multiplier.
+	 * @param int $density_multiplier screen density multiplier.
 	 * @return array Transform values prepared to be added as query args.
 	 */
 	public function resize( float $width, float $height, $density_multiplier = 1 ) {
