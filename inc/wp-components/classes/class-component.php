@@ -31,7 +31,9 @@ class Component implements \JsonSerializable {
 	 *
 	 * @var array
 	 */
-	public $children = [];
+	public $children = [
+		'theme_name' => '',
+	];
 
 	/**
 	 * Component groups.
